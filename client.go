@@ -11,9 +11,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-
 	_ "github.com/shoenig/mockery3/v3"
-
 	"gophers.dev/pkgs/ignore"
 )
 
