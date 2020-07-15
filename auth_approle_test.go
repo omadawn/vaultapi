@@ -12,7 +12,7 @@ import "testing"
 //)
 
 
-func Test_ListTokens(t *testing.T) {
+func Test_ListAppRoles(t *testing.T) {
 	client := getClient(t, rootTokener)
 
 	client.ListAppRoles()

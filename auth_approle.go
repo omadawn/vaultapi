@@ -14,6 +14,10 @@ import (
 
 var basePath				string			= "/auth/approle/role"
 
+type Auth_AppRole interface {
+	ListAppRoles()							([]string, error)
+	CreateAppRole(roleData AppRoleOptions)	(error)
+}
 
 type AppRoleOptions struct {
 	RoleName				string 			`json:role_name`							// Required: Name of the AppRole.
